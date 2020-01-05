@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>YUU-DEMO</title>
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <meta name="author" content="yushu">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="lyear-layout-web">
+        <div class="lyear-layout-container">
+            <!--左侧导航-->
+            <aside class="lyear-layout-sidebar">
+
+                <!-- logo -->
+                <div id="logo" class="sidebar-header">
+                    <a href="index.html"><img src="images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+                </div>
+                <div class="lyear-layout-sidebar-scroll">
+
+                    <nav class="sidebar-main">
+                        <ul class="nav nav-drawer">
+                            <li class="nav-item active"> <a href="index.html"><i class="mdi mdi-home"></i> 数据管理平台Demo</a> </li>
+                            <li class="nav-item active"> <a href="ca_pic.html"><i class="mdi mdi-home"></i> 相似性分析Demo</a> </li>
+                        </ul>
+                    </nav>
+
+                    <div class="sidebar-footer">
+                        <p class="copyright"><br>Hi~我是正在找工作的Yuu~<br>根据自己的经历，重新设计重新编了两个小Demo，仅做展示用，对简历进行补充。</p>
+                        <p>如果您觉得还不错，那就快约我面试吧~</p>
+                        <p>愿所有参加校招的人都能找到自己满意的那一份工作~</p>
+                    </div>
+                </div>
+
+            </aside>
+            <!--End 左侧导航-->
+
+            <!--头部信息-->
+            <header class="lyear-layout-header">
+
+                <nav class="navbar navbar-default">
+                    <div class="topbar">
+
+                        <div class="topbar-left">
+                            <div class="lyear-aside-toggler">
+                                <span class="lyear-toggler-bar"></span>
+                                <span class="lyear-toggler-bar"></span>
+                                <span class="lyear-toggler-bar"></span>
+                            </div>
+                        </div>
+
+                        <ul class="topbar-right">
+                            <li class="dropdown dropdown-profile">
+                                <a href="javascript:void(0)" data-toggle="dropdown">
+                                    <img class="img-avatar img-avatar-48 m-r-10" src="images/users/avatar.jpg" alt="YUU" />
+                                    <span>YUU<span class="caret"></span></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li> <a href=""><i class="mdi mdi-account"></i> 个人信息</a> </li>
+                                    <li> <a href=""><i class="mdi mdi-lock-outline"></i> 修改密码</a> </li>
+                                    <li> <a href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a></li>
+                                    <li class="divider"></li>
+                                    <li> <a href=""><i class="mdi mdi-logout-variant"></i> 退出登录</a> </li>
+                                </ul>
+                            </li>
+                            <!--切换主题配色-->
+                            <li class="dropdown dropdown-skin">
+                                <span data-toggle="dropdown" class="icon-palette"><i class="mdi mdi-palette"></i></span>
+                                <ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+                                    <li class="drop-title">
+                                        <p>主题</p>
+                                    </li>
+                                    <li class="drop-skin-li clearfix">
+                                        <span class="inverse">
+                    <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                    <label for="site_theme_1"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                    <label for="site_theme_2"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                    <label for="site_theme_3"></label>
+                  </span>
+                                    </li>
+                                    <li class="drop-title">
+                                        <p>LOGO</p>
+                                    </li>
+                                    <li class="drop-skin-li clearfix">
+                                        <span class="inverse">
+                    <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                    <label for="logo_bg_1"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                    <label for="logo_bg_2"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                    <label for="logo_bg_3"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                    <label for="logo_bg_4"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                    <label for="logo_bg_5"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                    <label for="logo_bg_6"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                    <label for="logo_bg_7"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                    <label for="logo_bg_8"></label>
+                  </span>
+                                    </li>
+                                    <li class="drop-title">
+                                        <p>头部</p>
+                                    </li>
+                                    <li class="drop-skin-li clearfix">
+                                        <span class="inverse">
+                    <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                    <label for="header_bg_1"></label>                      
+                  </span>
+                                        <span>                                                     
+                    <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                    <label for="header_bg_2"></label>                      
+                  </span>
+                                        <span>                                                     
+                    <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                    <label for="header_bg_3"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                    <label for="header_bg_4"></label>                      
+                  </span>
+                                        <span>                                                     
+                    <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                    <label for="header_bg_5"></label>                      
+                  </span>
+                                        <span>                                                     
+                    <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                    <label for="header_bg_6"></label>                      
+                  </span>
+                                        <span>                                                     
+                    <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                    <label for="header_bg_7"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                    <label for="header_bg_8"></label>
+                  </span>
+                                    </li>
+                                    <li class="drop-title">
+                                        <p>侧边栏</p>
+                                    </li>
+                                    <li class="drop-skin-li clearfix">
+                                        <span class="inverse">
+                    <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                    <label for="sidebar_bg_1"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                    <label for="sidebar_bg_2"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                    <label for="sidebar_bg_3"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                    <label for="sidebar_bg_4"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                    <label for="sidebar_bg_5"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                    <label for="sidebar_bg_6"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                    <label for="sidebar_bg_7"></label>
+                  </span>
+                                        <span>
+                    <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                    <label for="sidebar_bg_8"></label>
+                  </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--切换主题配色-->
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </header>
+            <!--End 头部信息-->
+
+            <!--页面主要内容-->
+            <main class="lyear-layout-content">
+
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-primary">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right col-xs-4 col-lg-4" style="padding-right: 4px;padding-left: 4px;">
+                                        <p class="h6 text-white m-t-0">预测数</p>
+                                        <p class="h3 text-white m-b-0">32</p>
+                                    </div>
+                                    <div id="card_p1" class="pull-left col-xs-8 col-lg-8" style="height: 62px;display: inline-block;padding-right: 0px;
+                                    padding-left: 8px;"> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-danger">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right col-xs-4 col-lg-4" style="padding-right: 4px;padding-left: 4px;">
+                                        <p class="h6 text-white m-t-0">影响量</p>
+                                        <p class="h3 text-white m-b-0">8.49</p>
+                                    </div>
+                                    <div id="card_p2" class="pull-left col-xs-8 col-lg-8" style="height: 62px;display: inline-block;padding-right: 0px;
+                                    padding-left: 8px;"> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-success">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right col-xs-4 col-lg-4" style="padding-right: 4px;padding-left: 4px;">
+                                        <p class="h6 text-white m-t-0">加药数</p>
+                                        <p class="h3 text-white m-b-0">19</p>
+                                    </div>
+                                    <div id="card_p3" class="pull-left col-xs-8 col-lg-8" style="height: 62px;display: inline-block;padding-right: 0px;
+                                    padding-left: 8px;"> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-purple">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right col-xs-4 col-lg-4" style="padding-right: 4px;padding-left: 4px;">
+                                        <p class="h6 text-white m-t-0">故障数</p>
+                                        <p class="h3 text-white m-b-0">12</p>
+                                    </div>
+                                    <div id="card_p4" class="pull-left col-xs-8 col-lg-8" style="height: 62px;display: inline-block;padding-right: 0px;
+                                    padding-left: 8px;"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">结垢情况分布图</div>
+                                <div class="panel-body">
+                                    <div id="pic" style="width: 100%; height: 500px;display: inline-block;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>项目信息</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>井号</th>
+                                                    <th>区块</th>
+                                                    <th>结垢日期</th>
+                                                    <th>结垢类型</th>
+                                                    <th>药剂型号</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tb">
+                                                <tr v-for="(item,index) in list">
+                                                    <td><span class="label label-danger">{{index+1}}</span></td>
+                                                    <td>{{item.jh}}</td>
+                                                    <td>{{item.qk}}</td>
+                                                    <td>{{item.jgrq}}</td>
+                                                    <td>{{item.jglx}}</td>
+                                                    <td>{{item.yjlx}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+            <!--End 页面主要内容-->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+        //index_pic
+        var pic = echarts.init(document.getElementById('pic'));
+        var option = {
+            grid: {
+                left: '3%',
+                right: '3%',
+                bottom: '3%',
+                containLabel: true
+            },
+            tooltip: {
+                // trigger: 'axis',
+                showDelay: 0,
+                formatter: function(params) {
+                    if (params.value.length > 1) {
+                        return params.seriesName + ' :<br/>' +
+                            params.value[0] +
+                            params.value[1];
+                    } else {
+                        return params.seriesName + ' :<br/>' +
+                            params.name + ' : ' +
+                            params.value;
+                    }
+                },
+                axisPointer: {
+                    show: true,
+                    type: 'cross',
+                    lineStyle: {
+                        type: 'dashed',
+                        width: 1
+                    }
+                }
+            },
+            toolbox: {
+                feature: {
+                    dataZoom: {},
+                    brush: {
+                        type: ['rect', 'polygon', 'clear']
+                    }
+                }
+            },
+            brush: {},
+            legend: {
+                data: ['未结垢', '结垢'],
+                left: 'center'
+            },
+            xAxis: [{
+                type: 'value',
+                scale: true,
+                name: '浓度2',
+                axisLabel: {
+                    formatter: '{value}'
+                },
+                splitLine: {
+                    show: false
+                }
+            }],
+            yAxis: [{
+                type: 'value',
+                scale: true,
+                name: '浓度1',
+                axisLabel: {
+                    formatter: '{value} mol/L'
+                },
+                splitLine: {
+                    show: false
+                }
+            }],
+            series: [{
+                name: '未结垢',
+                type: 'scatter',
+                data: [
+                    [161.2, 51.6],
+                    [167.5, 59.0],
+                    [170.0, 59.0],
+                    [176.2, 66.8],
+                    [172.5, 55.2],
+                    [170.9, 54.2],
+                    [172.9, 62.5],
+                    [153.4, 42.0],
+                    [160.0, 50.0],
+                    [147.2, 49.8],
+                    [168.2, 49.2],
+                    [175.0, 73.2],
+                    [157.0, 47.8],
+                    [167.6, 68.8],
+                    [164.0, 55.7],
+                    [155.0, 45.9],
+                    [170.0, 70.6],
+                    [176.2, 67.2],
+                    [170.0, 69.4],
+                    [170.3, 64.8],
+                    [164.1, 71.6],
+                    [169.5, 52.8],
+                    [163.2, 59.8],
+                    [154.5, 49.0],
+                    [173.2, 69.2],
+                    [170.0, 55.9],
+                    [161.4, 63.4],
+                    [169.0, 58.2],
+                    [166.2, 58.6],
+                    [159.4, 45.7],
+                    [162.5, 52.2],
+                    [159.0, 48.6],
+                    [162.8, 57.8],
+                    [159.0, 55.6],
+                    [179.8, 66.8],
+                    [162.9, 59.4],
+                    [161.0, 53.6],
+                    [151.1, 73.2],
+                    [168.2, 53.4],
+                    [168.9, 69.0],
+                    [173.2, 58.4],
+                    [171.8, 56.2],
+                    [178.0, 70.6],
+                    [168.5, 65.2],
+                    [143, 65],
+                    [166.8, 56.6],
+                    [172.7, 105.2],
+                    [169.4, 63.4],
+                    [167.8, 59.0],
+                    [158.2, 46.4],
+                    [156.0, 64.4],
+                    [167.1, 62.2],
+                    [167.6, 57.8],
+                    [156.0, 54.6],
+                    [162.1, 59.2],
+                    [173.4, 52.7],
+                    [159.8, 53.2],
+                    [160.0, 59.5],
+                    [168.9, 56.8],
+                    [165.1, 64.1],
+                    [162.6, 50.0],
+                    [165.1, 72.3],
+                    [166.4, 55.0],
+                    [160.0, 55.9],
+                    [152.4, 60.4],
+                    [170.2, 69.1],
+                    [162.6, 84.5],
+                    [157.5, 63.6],
+                    [162.6, 54.5],
+                    [152.4, 47.3],
+                    [152.4, 67.3],
+                    [168.9, 63.0],
+                    [170.2, 73.6],
+                    [175.2, 62.3],
+                    [175.2, 57.7]
+                ],
+                markArea: {
+                    silent: true,
+                    itemStyle: {
+                        color: 'transparent',
+                        borderWidth: 1,
+                        borderType: 'dashed'
+                    },
+                    data: [
+                        [{
+                            name: '未结垢分布区间',
+                            xAxis: 'min',
+                            yAxis: 'min'
+                        }, {
+                            xAxis: 'max',
+                            yAxis: 'max'
+                        }]
+                    ]
+                },
+                markPoint: {
+                    data: [{
+                        type: 'max',
+                        name: '最大值'
+                    }, {
+                        type: 'min',
+                        name: '最小值'
+                    }]
+                },
+                markLine: {
+                    lineStyle: {
+                        type: 'solid'
+                    },
+                    data: [{
+                        type: 'average',
+                        name: '平均值'
+                    }, {
+                        xAxis: 161
+                    }]
+                }
+            }, {
+                name: '结垢',
+                type: 'scatter',
+                data: [
+                    [171.2, 79.1],
+                    [181.6, 78.9],
+                    [167.4, 67.7],
+                    [181.1, 66.0],
+                    [177.0, 68.2],
+                    [174.5, 63.9],
+                    [177.5, 72.0],
+                    [170.5, 56.8],
+                    [182.4, 74.5],
+                    [197.1, 90.9],
+                    [180.1, 93.0],
+                    [175.5, 80.9],
+                    [180.6, 72.7],
+                    [184.4, 68.0],
+                    [175.5, 70.9],
+                    [180.6, 72.5],
+                    [177.0, 72.5],
+                    [177.1, 83.4],
+                    [181.6, 75.5],
+                    [176.5, 73.0],
+                    [175.0, 70.2],
+                    [174.0, 73.4],
+                    [165.1, 70.5],
+                    [177.0, 68.9],
+                    [192.0, 102.3],
+                    [176.5, 68.4],
+                    [169.4, 65.9],
+                    [182.1, 75.7],
+                    [179.8, 84.5],
+                    [175.3, 87.7],
+                    [184.9, 86.4],
+                    [177.3, 73.2],
+                    [167.4, 53.9],
+                    [178.1, 72.0],
+                    [168.9, 55.5],
+                    [180.3, 83.2],
+                    [170.2, 72.7],
+                    [177.8, 64.1],
+                    [172.7, 72.3],
+                    [165.1, 65.0],
+                    [186.7, 86.4],
+                    [165.1, 65.0],
+                    [174.0, 88.6],
+                    [175.3, 84.1],
+                    [185.4, 66.8],
+                    [177.8, 75.5],
+                    [180.3, 93.2],
+                    [180.3, 82.7],
+                    [177.8, 58.0],
+                    [177.8, 79.5],
+                    [177.8, 78.6],
+                    [177.8, 71.8],
+                    [177.8, 116.4],
+                    [163.8, 72.2],
+                    [188.0, 83.6],
+                    [198.1, 85.5],
+                    [175.3, 90.9],
+                    [166.4, 85.9],
+                    [190.5, 89.1],
+                    [166.4, 75.0],
+                    [177.8, 77.7],
+                    [179.7, 86.4],
+                    [172.7, 90.9],
+                    [190.5, 73.6],
+                    [185.4, 76.4],
+                    [168.9, 69.1],
+                    [167.6, 84.5],
+                    [175.3, 64.5],
+                    [170.2, 69.1],
+                    [190.5, 108.6],
+                    [177.8, 86.4],
+                    [190.5, 80.9],
+                    [177.8, 87.7],
+                    [184.2, 94.5],
+                    [176.5, 80.2],
+                    [177.8, 72.0],
+                    [180.3, 71.4],
+                    [171.4, 72.7],
+                    [172.7, 84.1],
+                    [172.7, 76.8],
+                    [177.8, 63.6],
+                    [177.8, 80.9],
+                    [182.9, 80.9],
+                    [170.2, 85.5],
+                    [167.6, 68.6],
+                    [175.3, 67.7],
+                    [165.1, 66.4],
+                    [185.4, 102.3],
+                    [181.6, 70.5],
+                    [172.7, 95.9],
+                    [190.5, 84.1],
+                    [179.1, 87.3],
+                    [175.3, 71.8],
+                    [170.2, 65.9],
+
+                ],
+                markArea: {
+                    silent: true,
+                    itemStyle: {
+                        color: 'transparent',
+                        borderWidth: 1,
+                        borderType: 'dashed'
+                    },
+                    data: [
+                        [{
+                            name: '结垢分布区间',
+                            xAxis: 'min',
+                            yAxis: 'min'
+                        }, {
+                            xAxis: 'max',
+                            yAxis: 'max'
+                        }]
+                    ]
+                },
+                markPoint: {
+                    data: [{
+                        type: 'max',
+                        name: '最大值'
+                    }, {
+                        type: 'min',
+                        name: '最小值'
+                    }]
+                },
+                markLine: {
+                    lineStyle: {
+                        type: 'solid'
+                    },
+                    data: [{
+                        type: 'average',
+                        name: '平均值'
+                    }, {
+                        xAxis: 181
+                    }]
+                }
+            }]
+        };
+        pic.setOption(option);
+        //自适应
+
+
+        var card_p1 = echarts.init(document.getElementById('card_p1'));
+        var card_p2 = echarts.init(document.getElementById('card_p2'));
+        var card_p3 = echarts.init(document.getElementById('card_p3'));
+        var card_p4 = echarts.init(document.getElementById('card_p4'));
+
+        option1 = {
+            xAxis: {
+                type: 'category',
+                show: false
+            },
+            yAxis: {
+                type: 'value',
+                show: false
+            },
+            series: [{
+                data: [0, 720, 500, 200, 1232, 200, 800, 401, 500, 800, 500, 600, 700, 200, 500, 700, 1000, 934, 1100, 1290, 1200, 1330, 1033, 1320],
+                type: 'line',
+                symbol: 'none',
+                lineStyle: {
+                    width: 4,
+
+                    color: {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                            offset: 0,
+                            color: 'white' // 0% 处的颜色
+                        }, {
+                            offset: 1,
+                            color: 'white' // 100% 处的颜色
+                        }],
+                        global: false // 缺省为 false
+
+                    },
+
+
+                }
+            }],
+        };
+        option2 = {
+            xAxis: {
+                type: 'category',
+                show: false
+            },
+            yAxis: {
+                type: 'value',
+                show: false
+            },
+            series: [{
+                data: [720, 500, 200, 1232, 200, 800, 345, 672, 234, 123, 233, 557, 900, 1200, 300, 600, 1100],
+                type: 'line',
+                symbol: 'none',
+                lineStyle: {
+                    width: 4,
+
+                    color: {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                            offset: 0,
+                            color: 'white' // 0% 处的颜色
+                        }, {
+                            offset: 1,
+                            color: 'white' // 100% 处的颜色
+                        }],
+                        global: false // 缺省为 false
+
+                    },
+
+
+                }
+            }],
+        };
+        option3 = {
+            xAxis: {
+                type: 'category',
+                show: false
+            },
+            yAxis: {
+                type: 'value',
+                show: false
+            },
+            series: [{
+                data: [200, 720, 500, 200, 1232, 200, 800, 401, 500, 800, 500, 600, 700, 1200, 800, 700, 800, 500, 300],
+                type: 'line',
+                symbol: 'none',
+                lineStyle: {
+                    width: 4,
+
+                    color: {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                            offset: 0,
+                            color: 'white' // 0% 处的颜色
+                        }, {
+                            offset: 1,
+                            color: 'white' // 100% 处的颜色
+                        }],
+                        global: false // 缺省为 false
+
+                    },
+
+
+                }
+            }],
+        };
+        option4 = {
+            xAxis: {
+                type: 'category',
+                show: false
+            },
+            yAxis: {
+                type: 'value',
+                show: false
+            },
+            series: [{
+                data: [0, 720, 500, 200, 1232, 200, 800, 401, 500, 800, 500, 600, 700, 200, 500, 700, 200, 400, 200, 800, 300, 500, 700, 200],
+                type: 'line',
+                symbol: 'none',
+                lineStyle: {
+                    width: 4,
+
+                    color: {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                            offset: 0,
+                            color: 'white' // 0% 处的颜色
+                        }, {
+                            offset: 1,
+                            color: 'white' // 100% 处的颜色
+                        }],
+                        global: false // 缺省为 false
+
+                    },
+
+
+                }
+            }],
+        };
+        card_p1.setOption(option1);
+        card_p2.setOption(option2);
+        card_p3.setOption(option3);
+        card_p4.setOption(option4);
+        //auto
+        window.addEventListener("resize", function() {
+
+            pic.resize();
+            card_p1.resize();
+            card_p2.resize();
+            card_p3.resize();
+            card_p4.resize();
+        });
+    </script>
+</body>
+
+</html>
